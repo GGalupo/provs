@@ -109,6 +109,7 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
         className={className}
         ref={ref}
         to={href}
+        style={{ textDecoration: "none" }}
         {...other}
       />
     );
