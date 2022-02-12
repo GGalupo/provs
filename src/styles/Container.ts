@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 
-import { Container as MUIContainer } from "../components/MUI/Container";
+import { Container } from "../components/MUI";
 
-export const GlobalContainer = styled(MUIContainer)`
+export const GlobalContainer = styled(Container)`
   max-width: 1440px;
 
   padding: 2rem 1.25rem;

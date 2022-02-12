@@ -6,7 +6,6 @@ import { CacheProvider, EmotionCache } from "@emotion/react";
 
 import { theme } from "../styles/theme";
 import { createEmotionCache } from "../utils/emotionCache";
-import { Container } from "../styles/Container";
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -23,9 +22,7 @@ export default function MyApp(props: MyAppProps) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Container>
-          <Component {...pageProps} />
-        </Container>
+        <Component {...pageProps} />
       </ThemeProvider>
     </CacheProvider>
   );

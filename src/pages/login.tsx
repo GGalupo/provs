@@ -1,14 +1,14 @@
 import { Link } from "../components/Link";
-import { Container } from "../components/MUI/Container";
-import { Typography } from "../components/MUI/Typography";
+import { Typography } from "../components/MUI";
+import { GlobalContainer } from "../styles";
 
 const Login = () => {
   return (
-    <Container>
+    <GlobalContainer>
       <Typography variant="h1">Login page</Typography>
       <Link href="/sign-up">To sign up page</Link>
       <Link href="/">To home page</Link>
-    </Container>
+    </GlobalContainer>
   );
 };
 

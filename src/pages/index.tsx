@@ -3,11 +3,11 @@ import type { NextPage } from "next";
 
 import { Link } from "../components/Link";
 import { Typography } from "../components/MUI";
-import { Container } from "../components/MUI/Container";
+import { GlobalContainer } from "../styles";
 
 const Home: NextPage = () => {
   return (
-    <Container>
+    <GlobalContainer>
       <Head>
         <title>Provs</title>
         <meta name="description" content="Provs" />
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <Typography variant="h1">Home page</Typography>
       <Link href="/login">To login page</Link>
       <Link href="/sign-up">To sign-up page</Link>
-    </Container>
+    </GlobalContainer>
   );
 };
 
