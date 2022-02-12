@@ -1,7 +1,10 @@
 import styled from "@emotion/styled";
+
 import { Container as MUIContainer } from "../components/MUI/Container";
 
 export const Container = styled(MUIContainer)`
+  max-width: 1440px;
+
   padding: 2rem 1.25rem;
 
   @media (min-width: 500px) {
