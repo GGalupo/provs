@@ -5,7 +5,6 @@ import NextLink, { LinkProps as NextLinkProps } from "next/link";
 import MuiLink, { LinkProps as MuiLinkProps } from "@mui/material/Link";
 import { styled } from "@mui/material/styles";
 
-// Add support for the sx prop for consistency with the other branches.
 const Anchor = styled("a")({});
 
 interface NextLinkComposedProps
@@ -52,13 +51,11 @@ export type LinkProps = {
   activeClassName?: string;
   as?: NextLinkProps["as"];
   href: NextLinkProps["href"];
-  linkAs?: NextLinkProps["as"]; // Useful when the as prop is shallow by styled().
+  linkAs?: NextLinkProps["as"];
   noLinkStyle?: boolean;
 } & Omit<NextLinkComposedProps, "to" | "linkAs" | "href"> &
   Omit<MuiLinkProps, "href">;
 
-// A styled version of the Next.js Link component:
-// https://nextjs.org/docs/api-reference/next/link
 export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
   function Link(props, ref) {
     const {
