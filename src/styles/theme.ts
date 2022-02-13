@@ -13,6 +13,18 @@ export const theme = createTheme({
       default: "#1b1b1b",
     },
   },
+  components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          textDecoration: "none",
+          ":hover": {
+            textDecoration: "underline",
+          },
+        },
+      },
+    },
+  },
   breakpoints: {
     values: {
       xs: 0,
